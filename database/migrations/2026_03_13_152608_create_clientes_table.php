@@ -19,6 +19,7 @@ return new class extends Migration
       $table->string('razon_social');
       $table->string('email');
       $table->timestamps();
+      $table->softDeletes();
       $table->unique(['user_id', 'rut']);
     });
   }
